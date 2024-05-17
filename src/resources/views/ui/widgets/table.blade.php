@@ -9,7 +9,7 @@
             <div class="card-title mb-0">{!! $widget['content']['header'] !!}</div>
         </div>
     @endif
-    <div class="table-responsive" @isset($widget['height']) style="height: {{ $widget['height'] }}"  @endisset>
+    <div class="card-table table-responsive" @isset($widget['height']) style="height: {{ $widget['height'] }}"  @endisset>
         <table class="{{ $widget['class'] ?? 'table' }}">
             @if ($widget['content']['thead'])
                 <thead>

@@ -23,7 +23,7 @@ final class UploadersRepository
 
     public function __construct()
     {
-        $this->uploaderClasses = config('backpack.crud.uploaders');
+        $this->uploaderClasses = config('backpack.crud.uploaders') ?? [];
     }
 
     /**
